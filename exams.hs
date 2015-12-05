@@ -19,10 +19,10 @@ powerLists = map (\n -> iterate(*n) (1) ) (from 1)
 --powerLists = map (\n -> take 5 (iterate(*n) (1) )) (from 1)
 
 powerLists':: [[Int]]
-powerLists' = [[y^x | x <- [1..]] | y <- [1..]]
+powerLists' = [[y^x | x <- [0..]] | y <- [1..]]
 
 -- For test
---powerLists' = [ take 5 ([y^x | x <- [1..]]) | y <- [1..]]
+--powerLists' = [ take 5 ([y^x | x <- [0..]]) | y <- [1..]]
 
 --factorial 0 = 1
 --factorial n = n * factorial (n - 1)
