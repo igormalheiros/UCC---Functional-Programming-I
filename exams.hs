@@ -1,3 +1,10 @@
+-- Igor de Almeida Malheiros Barbosa
+-- 115105300
+-- Functional Programming I
+-- Winter Exam 2014
+
+-- **************************************************************
+
 partialSums:: [Int] -> [Int]
 partialSums(x:[]) = x:[]
 partialSums (x:xs) = x: zipWith (+) (partialSums(x:xs)) (xs)
